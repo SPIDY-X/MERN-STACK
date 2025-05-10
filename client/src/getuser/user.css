@@ -1,0 +1,51 @@
+.userTable {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+}
+
+.userTable table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    table-layout: fixed; /* Prevents overflow by fixing column widths */
+}
+
+.userTable table thead th {
+    background-color: darkcyan;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.userTable table tbody td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; /* Prevents too wide columns */
+}
+
+.actionButtons button {
+    margin: 0 5px;
+    white-space: nowrap;
+}
+
+/* Responsive support */
+@media (max-width: 768px) {
+    .userTable {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .userTable table {
+        font-size: 14px;
+    }
+}
