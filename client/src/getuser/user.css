@@ -5,14 +5,14 @@
     padding: 50px;
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
-    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    overflow-x: auto; 
 }
 
 .userTable table {
     width: 100%;
     margin-top: 30px;
     border-collapse: collapse;
-    table-layout: fixed; /* Prevents overflow by fixing column widths */
+    table-layout: fixed; 
 }
 
 .userTable table thead th {
@@ -30,7 +30,7 @@
     word-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px; /* Prevents too wide columns */
+    max-width: 200px; 
 }
 
 .actionButtons button {

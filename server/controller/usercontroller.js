@@ -10,7 +10,7 @@ export const create = async(req, res) =>{
             return res.status(400).json({message: "User already exists."});
         }
         const saveData = await newUser.save();
-        // res.status(200).json(saveData);
+      
         res.status(200).json({message: "User created sucessfully"});
     }   
     catch (error) {
@@ -56,7 +56,7 @@ export const updateUser = async (req, res) => {
         const updatedUser = await Users.findByIdAndUpdate(id, req.body, {
             new:true
         });
-        // res.status(200).json(updatedUser)
+        
         res.status(200).json({message: "User Updated sucessfully"});
 
     }

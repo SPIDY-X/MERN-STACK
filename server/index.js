@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // replaces body-parser
+app.use(express.json()); 
 
 const PORT = process.env.PORT || 7000;
 const MONGOURL = process.env.MONGO_URL;
